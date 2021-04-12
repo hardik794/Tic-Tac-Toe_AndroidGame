@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7F6"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="26dp">
+
+
+        <LinearLayout
+            android:id="@+id/relativ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_main"
+                android:layout_width="350dp"
+                android:layout_height="220dp"
+                app:srcCompat="@drawable/tic" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativ"
+            android:layout_centerHorizontal="true"
+            android:text="Choose your play mode"
+            android:textColor="#DC0C2653"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/ai_btn"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/back"
+            android:fontFamily="sans-serif-light"
+            android:text="With AI"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/friend_btn"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ai_btn"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="9dp"
+            android:background="@drawable/backwhite"
+            android:fontFamily="sans-serif-light"
+            android:text="With a Friend"
+            android:textColor="#DC0C2653" />
+
+    </RelativeLayout>
+
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/adView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        ads:adSize="BANNER"-->
+<!--        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">-->
+<!--    </com.google.android.gms.ads.AdView>-->
+
+    <ImageButton
+        android:id="@+id/setting_btn"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/fab"
+        android:elevation="15dp"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/set" />
+
+
+</RelativeLayout>

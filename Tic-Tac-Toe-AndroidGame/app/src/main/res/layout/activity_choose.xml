@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7F6"
+    tools:context=".ChooseActivity">
+
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        android:id="@+id/adView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        app:adSize="BANNER"-->
+<!--        app:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>-->
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativ"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Pick your side"
+        android:textColor="#DC0C2653"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/relativ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dsag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-90dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="180dp"
+            android:layout_height="240dp"
+            android:layout_below="@+id/relativ"
+            app:srcCompat="@drawable/ooh" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="180dp"
+            android:layout_height="240dp"
+            app:srcCompat="@drawable/xxsh"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="6dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/dsa"
+        android:layout_width="281dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/relativ"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp">
+
+        <RadioButton
+            android:id="@+id/player1o"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="37dp"
+            android:buttonTint="#3b7df8"
+            android:scaleX="1.79"
+
+            android:scaleY="1.79" />
+
+        <RadioButton
+            android:id="@+id/player1x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="37dp"
+            android:buttonTint="#3b7df8"
+            android:scaleX="1.79"
+            android:scaleY="1.79" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/backwhite"
+
+        android:fontFamily="sans-serif-light"
+        android:text="Continue" />
+
+    <RelativeLayout
+        android:id="@+id/dsag"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_centerInParent="true">
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:background="#F5F7F6"
+android:layout_height="match_parent"
+tools:context=".SplashActivity">
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="#F5F7F6"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/splashimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-46dp"
+
+        android:layout_marginStart="1dp"
+
+        app:srcCompat="@drawable/tic" />
+
+    <TextView
+        android:id="@+id/splashtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splashimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-46dp"
+        android:fontFamily="@font/bangers"
+        android:textColor="#5C5959"
+        android:text="Tic Tac Toe"
+        android:textSize="45sp" />
+
+</RelativeLayout>
+</RelativeLayout>
